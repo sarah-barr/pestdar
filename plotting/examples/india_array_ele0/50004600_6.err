@@ -1,0 +1,4 @@
+cpu-bind=MASK - host597, task  0  0 [9458]: mask 0x800000000000 set
+Not a conda environment: /home/users/eeslb/.bashrc
+/home/users/eeslb/miniconda3/envs/pyart_3_8_biodar/lib/python3.8/site-packages/pyart/io/sigmet.py:131: UserWarning: File truncated or corrupt, 0 of 10 sweeps read
+  sigmet_data, sigmet_metadata = sigmetfile.read_data(full_xhdr=full_xhdr)

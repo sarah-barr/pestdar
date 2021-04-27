@@ -1,0 +1,2 @@
+cpu-bind=MASK - host618, task  0  0 [3226]: mask 0x4 set
+Not a conda environment: /home/users/eeslb/.bashrc
