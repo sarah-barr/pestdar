@@ -1,7 +1,7 @@
 ## Plotting
 
 There are 3 ways to create plots depending on what you need:
-1. Individual plots (single timestep) can be made using [Jupyter notebooks](https://github.com/sarah-barr/pestdar/tree/main/notebooks)
+1. Individual plots (single timestep) can be made using [Jupyter notebooks](https://github.com/sarah-barr/pestdar/tree/main/plotting/notebooks)
 2. A single month (India) or day (Oman) can be plotted using individual jobs on JASMIN
 3. Multiple months or days can be plotted using array jobs on JASMIN
 
@@ -9,7 +9,7 @@ There are 3 ways to create plots depending on what you need:
 The ? notebook can be run in Jupyter to create individual plots and test changes to the scripts. The code is (almost) identical to the code in the .py executable files used to make plots on JASMIN so should be easy to transfer to those scripts. 
 
 ### 2. Plotting on JASMIN
-The plot_radar.py script is used to plot all files from a particular directory. The script takes 4 inputs:
+The [plot_radar.py](https://github.com/sarah-barr/pestdar/blob/main/plotting/scripts/plot_radar.py) script is used to plot all files from a particular directory. The script takes 4 inputs:
 ```
 plot_radar.py dpath ele r spath 
 ```
