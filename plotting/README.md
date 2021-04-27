@@ -33,7 +33,7 @@ Directory created: /gws/nopw/j04/ncas_radar_vol1/eeslb/pestdar/plots/india/delhi
 ```
 If these lines aren't there the job didn't finish for some reason and you should check in the `.err` file. The script will check if the plot already exists so if the job doesn't finish (eg it runs out of time) you can run it again without it making all the plots again. 
 
-### 2.2. Job arrays
+#### 2.2. Job arrays
 Job arrays are groups of jobs with the same executable and resource requirements, but different input files. They are used here to submit jobs simultaneously to plot multiple months/days.
 
 The [create_array_job.sh](https://github.com/sarah-barr/pestdar/blob/main/scripts/create_array_job.sh) wrapper script can be used to create the job submission script. This takes the data directory (ie all salalah or all india data) and then checks how many directories there are within it and creates an array job submission script. `job_name`, `DATA_DIR`, `OUT_DIR` (lines 4,5,6) should be changed and then running it (`bash create_array_job.sh`) will write the [run_array_job.sbatch](https://github.com/sarah-barr/pestdar/blob/main/scripts/run_array_job.sbatch) script in the current working directory. This can then be submitted as above, the script will loop over the directories and submit each as a seperate task. Each task will have its own `.err` and `.out` output file. The job time limit relates to the time limit of each task. 
