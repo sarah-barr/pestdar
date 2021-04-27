@@ -1,2 +1,2 @@
 # pestdar
-Scripts for making plots and goetiffs of radar data 
+Scripts for making plots and geotiffs of radar data 
