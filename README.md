@@ -1,7 +1,7 @@
 # pestdar
 Scripts for making plots and geotiffs of radar data
 
-<img src="plotting/examples/plots/DLI200627062230_100km_ele1.png" width="90%" height="90%">
+<img src="plotting/examples/plots/DLI200627062230_100km_ele1.png" width="100%" height="100%">
 
 [geotiffs/](https://github.com/sarah-barr/pestdar/tree/main/geotiffs) : scripts for gridding radar data and creating geotiffs for use in arcGIS and R
 
