@@ -1,8 +1,9 @@
 #!/bin/bash
 
-job_directory=$PWD/plot_all_test
+job_directory=$PWD/
 job_name=salalah_test
 DATA_DIR=/gws/nopw/j04/ncas_radar_vol2/pestdar/oman/salalah/raw/cfradial/
+OUT_DIR=/gws/nopw/j04/ncas_radar_vol1/eeslb/pestdar/plots/oman/salalah/
 
 DATES=(${DATA_DIR}/*)
 
@@ -27,4 +28,4 @@ DATE_PATH=\${DATES[\$SLURM_ARRAY_TASK_ID]}
 source activate /home/users/eeslb/.bashrc
 source activate /home/users/eeslb/miniconda3/envs/pyart_3_8_biodar
 
-python plot_radar_all.py \${DATE_PATH} 1 100 /gws/nopw/j04/ncas_radar_vol1/eeslb/pestdar/plots/oman/salalah " > $JOB_FILE
+python plot_radar.py \${DATE_PATH} 1 100 ${OUT_DIR}" > $JOB_FILE
